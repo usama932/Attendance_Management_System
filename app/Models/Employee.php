@@ -34,22 +34,22 @@ class Employee extends Model
     {
         return $this->hasMany(Attendance::class);
     }
-    public function latetime()
-    {
-        return $this->hasMany(Latetime::class);
-    }
-    public function leave()
-    {
-        return $this->hasMany(Leave::class);
-    }
-    public function overtime()
-    {
-        return $this->hasMany(Overtime::class);
-    }
-    public function schedules()
-    {
-        return $this->belongsToMany('App\Models\Schedule', 'schedule_employees', 'emp_id', 'schedule_id');
-    }
+    // public function latetime()
+    // {
+    //     return $this->hasMany(Latetime::class);
+    // }
+    // public function leave()
+    // {
+    //     return $this->hasMany(Leave::class);
+    // }
+    // public function overtime()
+    // {
+    //     return $this->hasMany(Overtime::class);
+    // }
+    // public function schedules()
+    // {
+    //     return $this->belongsToMany('App\Models\Schedule', 'schedule_employees', 'emp_id', 'schedule_id');
+    // }
 
 
     
